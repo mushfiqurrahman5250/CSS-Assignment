@@ -1,0 +1,624 @@
+:root {
+    --bg: rgb(248, 243, 235)
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    border: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.navbar .logo {
+    color: rgb(255, 69, 0);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.navbar .logo i {
+    color: rgb(0, 0, 0);
+}
+
+.navbar .nav-right a {
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #242323;
+}
+
+.navbar .nav-right a:hover {
+    color: orangered;
+    background: rgb(36, 35, 35);
+}
+
+.navbar .icons {
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+    border-radius: 30px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #000000;
+}
+
+.navbar .icons:hover {
+    color: orangered;
+}
+
+.navbar .icons input {
+    text-transform: capitalize;
+    margin-left: .5rem;
+}
+
+.navbar .icons .fa-shopping-cart {
+    margin-right: .5rem;
+}
+
+
+/* header-part start */
+
+.header-part {
+    background-color: var(--bg);
+}
+
+.header {
+    display: flex;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    height: 100%;
+    min-height: 100vh
+}
+
+.header .header-left {
+    padding-top: 10%;
+    bottom: 20px;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+}
+
+.header .header-left .fast-food {
+    display: flex;
+    text-align: center;
+    padding-left: 20%;
+}
+
+.header .header-left .fast-food h1 {
+    color: orangered;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.header .header-left .fast-food h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header .header-left p {
+    color: rgb(32, 32, 32);
+}
+
+.header .header-left .btn {
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: .5rem;
+    border-radius: 20px;
+}
+
+.header .header-left .btn:hover {
+    background-color: orangered;
+}
+
+.header .header-left .btn a {
+    color: rgb(255, 255, 255);
+}
+
+.header .header-left .stars {
+    color: rgb(243, 113, 7);
+}
+
+.header .header-left h4 {
+    font-size: .7rem;
+}
+
+.header .header-left h5 {
+    font-size: .65rem;
+    color: rgb(75, 74, 74);
+}
+
+.header .header-right {
+    min-width: 400px;
+    max-width: 100%;
+    height: 400px;
+    margin-left: 25%;
+    display: flex;
+}
+
+
+/* header-part end */
+
+
+/* home section start */
+
+.home-part {
+    background-color: var(--bg);
+}
+
+.home-section {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: var(--bg); */
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.home-section .home-left {
+    padding-top: .5rem;
+    bottom: 20px;
+    text-align: center;
+    left: 20%;
+}
+
+.home-section .home-left h2 {
+    font-size: 1rem;
+    padding-top: .1rem;
+    color: #0a0a0a;
+}
+
+.home-section .home-left p {
+    font-size: .6rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    align-items: center;
+    color: rgb(39, 38, 38);
+}
+
+.home-section .home-left img {
+    width: 100%;
+    height: 40%;
+    /* padding-left: 10%; */
+    /* box-shadow: 0 .5rem 1.5rem rgba(144, 16, 16, 0.2); */
+}
+
+.home-small {
+    display: flex;
+    left: 0;
+    right: 0;
+    padding: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.home-section .home-right {
+    /* padding-bottom: 20%; */
+    padding-right: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section .home-right a {
+    font-size: 2rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: orangered;
+    font-weight: bold;
+}
+
+.home-section .home-right .stars {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+}
+
+.home-section .home-right .stars h4 {
+    font-size: .7rem;
+    color: rgb(27, 27, 27);
+}
+
+.home-section .home-right .stars h4 span {
+    text-transform: capitalize;
+    color: rgb(57, 57, 197);
+}
+
+.select-quality {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 100%;
+    margin-top: 30%;
+}
+
+.icon-1 {
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.icon-1 .btn {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(131, 125, 125);
+}
+
+.icon-1 .btn:hover {
+    background-color: rgb(0, 0, 0)
+}
+
+
+/* home section end */
+
+
+/* item section start */
+
+.item {
+    background-color: var(--bg);
+}
+
+.item .item-title {
+    font-weight: bold;
+    padding-top: .5rem;
+}
+
+.item .item-title h1 {
+    font-size: 2rem;
+    padding-bottom: .2rem;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.item .item-title p {
+    font-size: 1rem;
+    padding-bottom: .2rem;
+    color: rgb(53, 50, 50);
+    text-transform: capitalize;
+}
+
+.item .food {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 100%;
+    min-width: 230px;
+}
+
+.item .food .box {
+    background-color: rgb(236, 242, 246);
+}
+
+.item .food .box:hover {
+    background-color: rgb(192, 174, 221);
+    box-shadow: 0px 0px 20px rgba(20, 175, 202, 0.2)
+}
+
+.item .food .box img {
+    border-radius: .5rem;
+    height: 20rem;
+    width: 100%;
+}
+
+.item .food.box .food-list {
+    padding: 2rem;
+}
+
+.food-list h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.food-list p {
+    color: rgb(90, 82, 82);
+    font-size: .7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.food-list .price {
+    color: rgb(0, 0, 0);
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.food-list .price span {
+    padding: 3px;
+    color: rgb(255, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.food-list a {
+    color: rgb(49, 236, 43);
+    font-weight: bold;
+    align-items: center;
+    margin-left: 8rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 1px;
+    border: 1px solid;
+    border-color: rgba(0, 255, 0, 0.5);
+    border-radius: 5px;
+}
+
+.food-list a:hover {
+    background-color: orangered;
+}
+
+
+/* address section start */
+
+#address-section {
+    margin-top: 3rem;
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.address-table.address-title {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.address-title h1 {
+    padding: .2rem;
+    margin-left: 3rem;
+    text-transform: uppercase;
+}
+
+.address-title p {
+    padding: .2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.address-box {
+    display: flex;
+}
+
+.address-box>*:nth-child(1) {
+    flex-basis: 50%;
+    margin: 0 auto;
+    padding: 40px 100px;
+}
+
+.address-box>*:nth-child(2) {
+    flex-basis: 50%;
+    margin: 0 auto;
+    padding: 40px 100px;
+}
+
+.address-box .address-info {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg);
+    border-bottom: 1px solid rgb(170, 158, 158);
+    margin-top: 10px;
+    transition: 0.4s all;
+}
+
+.input:hover input:focus {
+    border: 1px solid orangered;
+    outline: none;
+}
+
+.address-box .check-box {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.check-box label {
+    font-size: 15px;
+}
+
+.submit button.btn {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #000000;
+    color: rgb(255, 248, 248);
+    background-color: rgb(3, 97, 3);
+    transition: .5s all;
+}
+
+.submit button.btn:hover {
+    color: rgb(8, 8, 8);
+    background-color: orangered;
+}
+
+.location {
+    margin-top: 1rem;
+}
+
+.location h3 {
+    font-size: .6rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.location address p {
+    font-size: .7rem;
+    padding: 5px;
+}
+
+.map {
+    padding: 1rem;
+}
+
+
+/* address part end */
+
+#footer-id {
+    background-color: rgb(30, 40, 51);
+}
+
+.footer-logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.footer-logo .logo {
+    padding-top: 10px;
+    margin-left: 115px;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+#footer-id .footer-main {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer-left {
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer-left p {
+    color: white;
+    padding: 2px;
+}
+
+.email {
+    background-color: rgb(30, 40, 51);
+    ;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid wheat;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.footer-main .footer-service {
+    margin-left: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.footer-service h1 {
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+
+.footer-service ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.footer-main .footer-about {
+    color: white;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+.footer-about h1 {
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+
+.footer-about ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.footer-main .footer-help {
+    color: white;
+    margin-left: 150px;
+    padding: 20px;
+}
+
+.footer-help h1 {
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+
+.footer-help ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.footer-last {
+    color: white;
+    display: flex;
+    margin-left: 80px;
+    padding: 20px;
+}
+
+.footer-last p {
+    padding: 1rem;
+    display: inline;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    padding-left: 60%;
+}
+
+.footer-icon i {
+    color: white;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.back-to-top {
+    background-color: aliceblue;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    background-color: black;
+}
+
+.text-left a i {
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-right: 15px;
+    color: orangered;
+}
